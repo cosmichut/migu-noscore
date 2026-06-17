@@ -1,0 +1,11 @@
+{
+  "name": "migu-noscore-dev",
+  "private": true,
+  "description": "migu-noscore Chrome extension development dependencies",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.54.0"
+  }
+}
