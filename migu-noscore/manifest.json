@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "migu-noscore",
+  "version": "1.0.0",
+  "description": "屏蔽咪咕视频赛事页面比分显示",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.miguvideo.com/p/schedule/*",
+        "https://www.miguvideo.com/p/live/*"
+      ],
+      "css": ["styles.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "host_permissions": [
+    "https://www.miguvideo.com/*"
+  ]
+}
